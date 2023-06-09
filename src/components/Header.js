@@ -1,6 +1,46 @@
-function Header(props) {
-    return <h1>Header</h1>;
-  }
-  
-  export default Header;
-  
+import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
+
+function Header() {
+  const weddingDate = new Date('2023-09-30');
+  const currentDate = new Date();
+  const remainingDays = Math.ceil((weddingDate - currentDate) / (1000 * 60 * 60 * 24));
+
+  const [daysRemaining, setDaysRemaining] = useState(remainingDays);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      const newDate = new Date();
+      const newRemainingDays = Math.ceil((weddingDate - newDate) / (1000 * 60 * 60 * 24));
+      setDaysRemaining(newRemainingDays);
+    }, 1000);
+
+    return () => clearInterval(interval);
+  }, [weddingDate]);
+
+  return (
+    <div className="title-header">
+      <h1>Tiago &amp; Sue</h1>
+      <h2>September 30, 2023</h2>
+      <h3>Countdown: {daysRemaining} days</h3>
+      <nav>
+        <ul>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/ourstory">Our Story</Link>
+          </li>
+          <li>
+            <Link to="/weddingparty">Wedding Party</Link>
+          </li>
+          <li>
+            <Link to="/guestbook">Guestbook</Link>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  );
+}
+
+export default Header;
