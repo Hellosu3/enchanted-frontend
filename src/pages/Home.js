@@ -1,18 +1,31 @@
 import React from 'react';
+import '../CSS/Home.css';
+
+
 
 function Home() {
   return (
-    <div>
-      <img src="https://i.imgur.com/1WkNIId.jpg" alt="Wedding" style={{ width: '25%', height: 'auto' }} />
+    <div className="home-container">
+    <img src="https://i.imgur.com/X2C1gsY.png" className="welcome-photo" />
+   
+      
+      
+
       <h1>Welcome to Our Wedding Website</h1>
       <p>
-        We are excited to celebrate our special day with you! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut lobortis libero ac velit gravida, vel sagittis neque pharetra. Sed dictum mi quis tincidunt pellentesque. Aenean a volutpat nunc, eu scelerisque neque. Morbi viverra efficitur ex, et elementum tortor semper ut. Aliquam vitae metus id nulla consequat congue.
+      To our beloved guests,
+      we extend a warm and heartfelt welcome. Your presence at our wedding is a blessing, and we are honored to have you share your love and support, making this day truly magical. We have poured our hearts into creating a day filled with love, laughter, and cherished moments. From the bottom of our hearts, thank you for being a part of our lives and joining us on this beautiful journey. We look forward to celebrating with you and creating memories that will last a lifetime.
+      With love and gratitude,
+      Sue and Tiago
       </p>
       <p>
         Please explore our website to find more information about our love story, the wedding party, and to leave us a message in the guestbook. We look forward to seeing you on September 30, 2023!
       </p>
     </div>
+    
   );
 }
 
 export default Home;
+
+

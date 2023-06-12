@@ -1,0 +1,123 @@
+/* .title-header {
+    text-align: center;
+    padding: 20px;
+    margin: 0 12.5%;
+  }
+  
+  .title-header h1 {
+    font-size: 60px;
+    margin-bottom: 10px;
+  }
+  
+  .title-header h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .title-header h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .header-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    border-radius: 5px;
+    flex-wrap: wrap; 
+  }
+  
+  .header-links li {
+    margin: 0 30px; 
+  }
+  
+  .header-links li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .header-links li a:hover {
+    background-color: white;
+    font-size: 120%; 
+    font-weight: bold; 
+  }
+  
+  .header-divider {
+    border: none;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.2); 
+    margin: 10px 0; 
+  }
+   */
+   .title-header {
+    text-align: center;
+    padding: 20px;
+    margin: 0 12.5%;
+  }
+  
+  .title-header h1 {
+    font-size: 60px;
+    margin-bottom: 10px;
+    font-weight: 100;
+  }
+  
+  .title-header h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .title-header h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .header-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    border-radius: 5px;
+    flex-wrap: wrap; /* Allow links to wrap onto the next line */
+  }
+  
+  .header-links li {
+    margin: 0 30px; /* Increase/decrease the margin to adjust the spacing between links */
+  }
+  
+  .header-links li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .header-links li a:hover {
+    background-color: white;
+    font-size: 120%; /* Increase the font size by 20% when hovering */
+    font-weight: bold; /* Make the font bolder when hovering */
+  }
+  
+  .header-links li a.tiago,
+  .header-links li a.sue {
+    font-weight: normal; /* Make Tiago and Sue less bold */
+  }
+  
+  .header-divider {
+    border: none;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.2); /* Customize the color and opacity of the horizontal rule */
+    margin: 10px 0; /* Add margin above and below the horizontal rule */
+  }
+  .header-image {
+    width: 50px; /* Adjust the width as needed */
+    height: 50px; /* Adjust the height as needed */
+    margin-left: 10px; /* Add margin to separate the image from the text */
+  }
+  
