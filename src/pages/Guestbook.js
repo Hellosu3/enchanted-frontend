@@ -61,7 +61,7 @@ const Guestbook = () => {
     } else {
       // Create new message
       try {
-        await axios.post('https://enchantedbackend.herokuapp.com', newMessage);
+        await axios.post('https://enchantedbackend.herokuapp.com/message', newMessage);
         setNewMessage({ name: '', email: '', friend: '', message: '' });
         fetchMessages();
       } catch (error) {
