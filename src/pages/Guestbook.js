@@ -37,7 +37,7 @@ const Guestbook = () => {
 
   const fetchMessages = async () => {
     try {
-      const response = await axios.get('https://enchantedbackend.herokuapp.com//message');
+      const response = await axios.get('https://enchantedbackend.herokuapp.com/message');
       setMessages(response.data.data);
     } catch (error) {
       console.error('Error fetching messages:', error);
