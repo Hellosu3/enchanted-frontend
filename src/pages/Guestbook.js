@@ -37,7 +37,7 @@ const Guestbook = () => {
 
   const fetchMessages = async () => {
     try {
-      const response = await axios.get('http://localhost:4000/message');
+      const response = await axios.get('https://enchantedbackend.herokuapp.com/message');
       setMessages(response.data.data);
     } catch (error) {
       console.error('Error fetching messages:', error);
@@ -50,7 +50,7 @@ const Guestbook = () => {
     if (isEditing) {
       // Update existing message
       try {
-        await axios.put(`http://localhost:4000/message/${selectedMessage._id}`, newMessage);
+        await axios.put(`https://enchantedbackend.herokuapp.com/message/${selectedMessage._id}`, newMessage);
         setIsEditing(false);
         setSelectedMessage(null);
         setNewMessage({ name: '', email: '', friend: '', message: '' });
@@ -61,7 +61,7 @@ const Guestbook = () => {
     } else {
       // Create new message
       try {
-        await axios.post('http://localhost:4000/message', newMessage);
+        await axios.post('https://enchantedbackend.herokuapp.com', newMessage);
         setNewMessage({ name: '', email: '', friend: '', message: '' });
         fetchMessages();
       } catch (error) {
@@ -72,7 +72,7 @@ const Guestbook = () => {
 
   const handleDelete = async (id) => {
     try {
-      await axios.delete(`http://localhost:4000/message/${id}`);
+      await axios.delete(`https://enchantedbackend.herokuapp.com/message/${id}`);
       fetchMessages();
     } catch (error) {
       console.error('Error deleting message:', error);
