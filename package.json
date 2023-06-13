@@ -24,7 +24,11 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "eslintConfig": {
+  "engines": {
+    "node": "18.12.1", 
+    "npm": "8.19.2"  
+  },
+   "eslintConfig": {
     "extends": [
       "react-app",
       "react-app/jest"

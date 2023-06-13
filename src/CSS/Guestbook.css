@@ -28,12 +28,18 @@
 
 .guestbook-form button {
   padding: 10px 20px;
-  background-color: #4caf50;
+  background-color: #a8bfef;
   color: #fff;
   border: none;
   cursor: pointer;
-}
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
 
+}
+.guestbook-form button:hover {
+  background-color: #a6c5e7;
+}
 .guestbook-message {
   margin-bottom: 20px;
   border: 1px solid #ccc;
@@ -49,16 +55,50 @@
   margin-bottom: 10px;
 }
 
-.guestbook-message button {
+/* .guestbook-message button {
   padding: 5px 10px;
-  background-color: #f44336;
+  background-color: #98c781;
   color: hsl(0, 0%, 92%);
   border: none;
   cursor: pointer;
+} */
+
+.guestbook-message button {
+  padding: 5px 10px;
+  margin-right: 5px;
+  background-color: #d194bf;
+  color: hsl(0, 0%, 92%);
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+.guestbook-message button.edit {
+  background-color: #dec17f;
+}
+
+.guestbook-message button.delete {
+  background-color: #d87070;
+  color: #fff;
 }
 
 .guestbook-message button:hover {
-  background-color: #d32f2f;
+  background-color: #efcc6d;
+}
+
+.guestbook-message button.edit:hover {
+  background-color: #8edb97;
+}
+
+.guestbook-message button.delete:hover {
+  background-color: #4eaa7e;
+}
+
+
+.guestbook-message button:hover {
+  background-color: #83c395;
 }
 
 .guestbook-message p.no-messages {

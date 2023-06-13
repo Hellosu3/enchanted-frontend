@@ -1,4 +1,7 @@
-/* .home-container {
+
+
+   .home-container {
+    position: relative; 
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -9,43 +12,41 @@
   }
   
   .welcome-photo {
+    position: relative; 
     width: 100%; 
-    height: auto;
-    margin-bottom: 20px;
-    border-radius: 10px; 
-    opacity: 2;
-  }
-  
-  .home-container h1 {
-    font-size: 32px;
-    margin-bottom: 10px;
-  }
-  
-  .home-container p {
-    font-size: 18px;
-    margin-bottom: 20px;
-  }
-   */
-
-   .home-container {
-    position: relative; /* Set the container as a relative position */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 20px;
-    margin: 0 auto;
-    max-width: 70%; /* Set the maximum width of the container */
-  }
-  
-  .welcome-photo {
-    position: relative; /* Set the photo as a relative position */
-    width: 100%; /* Increase the width to make the photo 2 times larger */
     max-width: 1200px;
     height: auto;
     margin-bottom: 20px;
-    border-radius: 10px; /* Make the edges round */
-    opacity: 1.5; /* Adjust the opacity of the photo */
-    z-index: 1; /* Set a higher z-index to position the photo on top of the other content */
+    border-radius: 10px; 
+    opacity: 1.5;
+    z-index: 1; 
+  }
+  .welcome-section {
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .welcome-heading {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .welcome-message {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .website-info {
+    font-size: 16px;
+  }
+  
+  
+  .welcome-section h1 {
+    margin-bottom: 20px;
+  }
+  
+  .welcome-section p:last-child {
+    margin-top: 60px;
   }
   

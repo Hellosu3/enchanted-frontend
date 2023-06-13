@@ -40,6 +40,9 @@ function Header() {
           <li>
             <Link to="/guestbook">Guestbook</Link>
           </li>
+          <li>
+          <Link to="/registrygifts">Registry/Gifts</Link>
+         </li>
         </ul>
       </nav>
       <hr className="header-divider" /> {/* Horizontal rule below the navigation */}

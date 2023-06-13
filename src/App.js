@@ -8,6 +8,8 @@ import Home from "./pages/Home";
 import Guestbook from "./pages/Guestbook";
 import Ourstory from "./pages/Ourstory";
 import Weddingparty from "./pages/Weddingparty";
+import RegistryGifts from "./pages/RegistryGifts";
+
 import './App.css';
 
 function App() {
@@ -22,6 +24,7 @@ function App() {
           <Route path="/guestbook" element={<Guestbook />} />
           <Route path="/ourstory" element={<Ourstory />} />
           <Route path="/weddingparty" element={<Weddingparty />} />
+          <Route path="/registrygifts" element={<RegistryGifts />} />
         </Routes>
         <Footer />
       </Router>

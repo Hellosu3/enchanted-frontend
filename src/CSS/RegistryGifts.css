@@ -1,0 +1,64 @@
+
+
+   .registry-gifts-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 60px;
+  }
+  
+  .payment-method {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  
+  .qr-code {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .qr-code img {
+    width: 200px;
+    margin: 20px 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  .logo {
+    width: 30px;
+  
+    margin-right: 10px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+  }
+  
+  .logo:hover {
+    transform: rotate(360deg);
+  }
+  
+
+
+  .payment-method p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .sage-green-link {
+    color: #5caf74; 
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s, transform 0.3s;
+  }
+  .sage-green-link:hover {
+    color: #236d36; 
+    transform: perspective(100px) rotateX(5deg);
+  }
