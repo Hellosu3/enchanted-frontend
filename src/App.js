@@ -11,7 +11,7 @@ import Weddingparty from "./pages/Weddingparty";
 import './App.css';
 
 function App() {
-  const URL = "http://localhost:3000";
+  // const URL = "http://localhost:3000";
 
   return (
     <div className="App">

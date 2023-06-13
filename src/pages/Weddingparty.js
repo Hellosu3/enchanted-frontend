@@ -136,126 +136,281 @@
 
 
 
-
-const people = [
-    {
-      name: 'Grace',
-      role: 'Matron of Honor',
-      imageUrl:
-        'https://i.imgur.com/hZfyilE.png',
-    },
-    {
-        name: 'Alissa',
-        role: 'Matron of Honor',
-        imageUrl:
-          'https://i.imgur.com/VaYU7sr.png',
-      },
-      {
-        name: 'Anne',
-        role: ' Bridesmaid',
-        imageUrl:
-          'https://i.imgur.com/NIIYuQL.png',
-      },
-      {
-        name: 'Rachel',
-        role: ' Bridesmaid',
-        imageUrl:
-          'https://i.imgur.com/ETElqPt.png',
-      },
-      {
-        name: 'Amy',
-        role: ' Bridesmaid',
-        imageUrl:
-          'https://i.imgur.com/BGAP3d8.png',
-      },
-      {
-        name: 'Leah',
-        role: ' Bridesmaid',
-        imageUrl:
-          'https://i.imgur.com/9AIN4C0.png',
-      },
-      {
-        name: 'Jee',
-        role: ' Bridesmaid',
-        imageUrl:
-          'https://i.imgur.com/D74hGQP.png',
-      },
-      {
-        name: 'Jane',
-        role: ' Bridesmaid',
-        imageUrl:
-          'https://i.imgur.com/NlNteI1.png',
-      },
-    {
-      name: 'Allen',
-      role: 'Best Man',
-      imageUrl:
-        'https://i.imgur.com/VxvHy9Y.png',
-    },
-    {
-        name: 'Woody',
-        role: 'Groomsman',
-        imageUrl:
-          'https://i.imgur.com/Ku5JOt3.png',
-      },
-      {
-        name: 'Dan',
-        role: 'Groomsman',
-        imageUrl:
-          'https://i.imgur.com/6cZZhOT.png',
-      },
-      {
-        name: 'Andy',
-        role: 'Groomsman',
-        imageUrl:
-          'https://i.imgur.com/K040aS7.png',
-      },
-      {
-        name: 'Rick',
-        role: 'Groomsman',
-        imageUrl:
-          'https://i.imgur.com/6vtJ8Iy.png',
-      },
-      {
-        name: 'Filipe',
-        role: 'Groomsman',
-        imageUrl:
-          'https://i.imgur.com/3ZxSHb5.png',
-      },
+// const people = [
+//     {
+//       name: 'Grace',
+//       role: 'Matron of Honor',
+//       imageUrl:
+//         'https://i.imgur.com/hZfyilE.png',
+//     },
+//     {
+//         name: 'Alissa',
+//         role: 'Matron of Honor',
+//         imageUrl:
+//           'https://i.imgur.com/VaYU7sr.png',
+//       },
+//       {
+//         name: 'Anne',
+//         role: ' Bridesmaid',
+//         imageUrl:
+//           'https://i.imgur.com/NIIYuQL.png',
+//       },
+//       {
+//         name: 'Rachel',
+//         role: ' Bridesmaid',
+//         imageUrl:
+//           'https://i.imgur.com/ETElqPt.png',
+//       },
+//       {
+//         name: 'Amy',
+//         role: ' Bridesmaid',
+//         imageUrl:
+//           'https://i.imgur.com/BGAP3d8.png',
+//       },
+//       {
+//         name: 'Leah',
+//         role: ' Bridesmaid',
+//         imageUrl:
+//           'https://i.imgur.com/9AIN4C0.png',
+//       },
+//       {
+//         name: 'Jee',
+//         role: ' Bridesmaid',
+//         imageUrl:
+//           'https://i.imgur.com/D74hGQP.png',
+//       },
+//       {
+//         name: 'Jane',
+//         role: ' Bridesmaid',
+//         imageUrl:
+//           'https://i.imgur.com/NlNteI1.png',
+//       },
+//     {
+//       name: 'Allen',
+//       role: 'Best Man',
+//       imageUrl:
+//         'https://i.imgur.com/VxvHy9Y.png',
+//     },
+//     {
+//         name: 'Woody',
+//         role: 'Groomsman',
+//         imageUrl:
+//           'https://i.imgur.com/Ku5JOt3.png',
+//       },
+//       {
+//         name: 'Dan',
+//         role: 'Groomsman',
+//         imageUrl:
+//           'https://i.imgur.com/6cZZhOT.png',
+//       },
+//       {
+//         name: 'Andy',
+//         role: 'Groomsman',
+//         imageUrl:
+//           'https://i.imgur.com/K040aS7.png',
+//       },
+//       {
+//         name: 'Rick',
+//         role: 'Groomsman',
+//         imageUrl:
+//           'https://i.imgur.com/6vtJ8Iy.png',
+//       },
+//       {
+//         name: 'Filipe',
+//         role: 'Groomsman',
+//         imageUrl:
+//           'https://i.imgur.com/3ZxSHb5.png',
+//       },
     
-    ];
+//     ];
     
-    export default function Example() {
+//     export default function Example() {
       
 
-      return (
-        <div className="bg-white py-24 sm:py-32">
-          <div className="mx-auto grid max-w-7xl gap-x-8 gap-y-20 px-6 lg:px-8 xl:grid-cols-3">
-            <div className="max-w-2xl">
-              <h2 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-4xl">Our I do Crew</h2>
-              <p className="mt-6 text-xl leading-8 text-gray-600">
-                Meet the wedding party!
-              </p>
-            </div>
-            <ul role="list" className="grid gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2">
-              {people.map((person) => (
-                <li key={person.name}>
-                  <div className="flex items-center gap-x-6">
-                    <img className="h-24 w-24 rounded-full" src={person.imageUrl} alt="" />
-                    <div>
-                      <h3 className="text-lg font-semibold leading-7 tracking-tight text-gray-900">{person.name}</h3>
-                      <p className="text-base leading-6 text-violet-800">{person.role}</p>
+//       return (
+//         <div className="bg-white py-24 sm:py-32">
+//           <div className="mx-auto grid max-w-7xl gap-x-8 gap-y-20 px-6 lg:px-8 xl:grid-cols-3">
+//             <div className="max-w-2xl">
+//               <h2 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-4xl">Our I do Crew</h2>
+//               <p className="mt-6 text-xl leading-8 text-gray-600">
+//                 Meet the wedding party!
+//               </p>
+//             </div>
+//             <ul role="list" className="grid gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2">
+//               {people.map((person) => (
+//                 <li key={person.name}>
+//                   <div className="flex items-center gap-x-6">
+//                     <img className="h-24 w-24 rounded-full" src={person.imageUrl} alt="" />
+//                     <div>
+//                       <h3 className="text-lg font-semibold leading-7 tracking-tight text-gray-900">{person.name}</h3>
+//                       <p className="text-base leading-6 text-violet-800">{person.role}</p>
                     
-                    </div>
-                  </div>
-                </li>
-              ))}
-            </ul>
+//                     </div>
+//                   </div>
+//                 </li>
+//               ))}
+//             </ul>
+//           </div>
+//         </div>
+//       );
+//     }
+
+
+
+
+import React, { useState } from 'react';
+
+
+  const people = [
+        {
+          name: 'Grace',
+          role: 'Matron of Honor',
+          imageUrl:
+            'https://i.imgur.com/hZfyilE.png',
+          description: "Grace is one of my bestest friends, I've known since jr. high.  Her magnetic presence attracts attention wherever she goes. She has profound love for humanity. I admire her concerns and thoughts for others. It's a quality that draws people to her, seeking her wise counsel and guidance. It's no wonder she was called to a helping profession, where her warmth and sound advice make a positive impact. Beyond that, Grace is an absolute blast to be around; a total riot! We always stood up for one another, burned one another cds, held each other accountible, partied together, went to church together. Through thick and thin, we've remained steadfast, always supporting one another in prayer, in one another's bridal party, and I'm excited to raise my future kids with your kids. We went through so many of life's seasons together. She is very protective and loves fiercely. I'm grateful that our journey has carried us from our teenage years into adulthood, sharing so many significant moments along the way. How did I get so lucky? You're somone who makes me feel seen and loved. I love you"
+        },
+        {
+            name: 'Alissa',
+            role: 'Matron of Honor',
+            imageUrl:
+              'https://i.imgur.com/VaYU7sr.png',
+            description: " Alissa is another one of my bestest friends. She has stuck by my side through all of the lemons life has thrown. She has an infectious laugh that will cause an uproar wherever she goes. She has  She motivates me each and everyday to become a better version of myself. She is my constant cheerleader and I am hers. I first met her my freshman year. I wasn't sure how I felt about her glaring stares, but she turned out incredibly sweet. She offered her mom to give me a ride to school. Since then we were inseparable. We had all the same classes rest of highschool. We also lived 3 min. away from one another. We explored our teenage years together, dying our hair the same brassy blonde, getting all the same clothes and accessories. She would even bake my sisters a cake for their birthday. Treating them like her own. I used to copy her homework and get good grades. I am forever grateful she never snitched on me. She is a huge heart and one of the smartest girls I know who has incredible discpline and work ethic. She  epitomizes the work hard and play hard motto. I admire that she is always aspiring to be zen and loving in every aspect. She attracts so many to her. Everyone and myself adores her bright personality. I am very lucky to have you! I love you."
+          },
+          {
+            name: 'Anne',
+            role: ' Bridesmaid',
+            imageUrl:
+              'https://i.imgur.com/NIIYuQL.png',
+          },
+          {
+            name: 'Rachel',
+            role: ' Bridesmaid',
+            imageUrl:
+              'https://i.imgur.com/ETElqPt.png',
+          },
+          {
+            name: 'Amy',
+            role: ' Bridesmaid',
+            imageUrl:
+              'https://i.imgur.com/BGAP3d8.png',
+          },
+          {
+            name: 'Leah',
+            role: ' Bridesmaid',
+            imageUrl:
+              'https://i.imgur.com/9AIN4C0.png',
+          },
+          {
+            name: 'Jee',
+            role: ' Bridesmaid',
+            imageUrl:
+              'https://i.imgur.com/D74hGQP.png',
+          },
+          {
+            name: 'Jane',
+            role: ' Bridesmaid',
+            imageUrl:
+              'https://i.imgur.com/NlNteI1.png',
+          },
+        {
+          name: 'Allen',
+          role: 'Best Man',
+          imageUrl:
+            'https://i.imgur.com/VxvHy9Y.png',
+        },
+        {
+            name: 'Woody',
+            role: 'Groomsman',
+            imageUrl:
+              'https://i.imgur.com/Ku5JOt3.png',
+          },
+          {
+            name: 'Dan',
+            role: 'Groomsman',
+            imageUrl:
+              'https://i.imgur.com/6cZZhOT.png',
+          },
+          {
+            name: 'Andy',
+            role: 'Groomsman',
+            imageUrl:
+              'https://i.imgur.com/K040aS7.png',
+          },
+          {
+            name: 'Rick',
+            role: 'Groomsman',
+            imageUrl:
+              'https://i.imgur.com/6vtJ8Iy.png',
+          },
+          {
+            name: 'Filipe',
+            role: 'Groomsman',
+            imageUrl:
+              'https://i.imgur.com/3ZxSHb5.png',
+          },
+        
+    
+];
+
+const PersonDescription = ({ person }) => {
+  return (
+    <div>
+      <h2>{person.name}</h2>
+      <p>{person.role}</p>
+      <p>{person.description}</p> {/* Display the person's unique description */}
+    </div>
+  );
+};
+
+const WeddingParty = () => {
+  const [selectedPerson, setSelectedPerson] = useState(null);
+
+  const handlePersonClick = (person) => {
+    setSelectedPerson(person);
+  };
+
+  const handleCloseClick = () => {
+    setSelectedPerson(null);
+  };
+
+  return (
+    <div className="bg-white py-24 sm:py-32">
+      <div className="mx-auto grid max-w-7xl gap-x-8 gap-y-20 px-6 lg:px-8 xl:grid-cols-3">
+        <div className="max-w-2xl">
+          <h2 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-4xl">Our I do Crew</h2>
+          <p className="mt-6 text-xl leading-8 text-gray-600">Meet the wedding party!</p>
+        </div>
+        <ul role="list" className="grid gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2">
+          {people.map((person) => (
+            <li key={person.name}>
+              <div className="flex items-center gap-x-6">
+                <img
+                  className="h-24 w-24 rounded-full cursor-pointer"
+                  src={person.imageUrl}
+                  alt=""
+                  onClick={() => handlePersonClick(person)}
+                />
+                <div>
+                  <h3 className="text-lg font-semibold leading-7 tracking-tight text-gray-900">{person.name}</h3>
+                  <p className="text-base leading-6 text-violet-800">{person.role}</p>
+                </div>
+              </div>
+            </li>
+          ))}
+        </ul>
+      </div>
+      {selectedPerson && (
+        <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 flex items-center justify-center">
+          <div className="bg-white p-6 rounded-lg">
+            <PersonDescription person={selectedPerson} />
+            <button className="mt-4 bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded" onClick={handleCloseClick}>
+              Close
+            </button>
           </div>
         </div>
-      );
-    }
+      )}
+    </div>
+  );
+};
 
-
-
-
+export default WeddingParty;
