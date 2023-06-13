@@ -9,6 +9,7 @@ function Header() {
 
   const [daysRemaining, setDaysRemaining] = useState(remainingDays);
 
+
   useEffect(() => {
     const interval = setInterval(() => {
       const newDate = new Date();
@@ -18,11 +19,37 @@ function Header() {
 
     return () => clearInterval(interval);
   }, [weddingDate]);
+  
+
+  const [showSeventhPlace, setShowSeventhPlace] = useState(false);
+
+  const toggleSeventhPlace = () => {
+    setShowSeventhPlace(!showSeventhPlace);
+  };
+
+  const seventhPlaceImage = 'https://i.imgur.com/dC4B6U2.jpg';
+  const seventhPlaceAddress = ' 802 Mateo St, Los Angeles, CA 90021';
+
+
+
 
   return (
     <div className="title-header">
-      <h1>Tiago &amp; Sue</h1>
-      <img src="https://i.imgur.com/3v72CwZ.png" alt="Image" className="header-image" /> {/* Add the image */}
+      <h1>Tiago &amp; Sue </h1>
+      <h1>
+      <Link to="#" onClick={toggleSeventhPlace} className="seventh-place-link">
+        <span className="seventh-place-text">Seventh Place</span>
+        <span className="seventh-place-underline"></span>
+        </Link>
+          </h1>
+        {showSeventhPlace && (
+        <div className="seventh-place-details">
+          <div className="seventh-place-photo-container">
+          <img src={seventhPlaceImage} alt="Seventh Place" className="seventh-place-photo" />
+          </div> 
+          <p>Address: {seventhPlaceAddress}</p>
+        </div>
+      )}
       <h2>09.30.23 | Los Angeles, CA</h2>
       <h3>{daysRemaining} DAYS TO GO!</h3>
       <hr className="header-divider" /> {/* Horizontal rule above the navigation */}

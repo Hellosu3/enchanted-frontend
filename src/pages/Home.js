@@ -4,13 +4,15 @@ import '../CSS/Home.css';
 
 
 function Home() {
+
+
+
+
+
   return (
     <div className="home-container">
     <img src="https://i.imgur.com/X2C1gsY.png" className="welcome-photo" />
-   
-      
-      
-    <div className="welcome-section">
+      <div className="welcome-section">
       <h1>Welcome to Our Wedding Website</h1>
       <p>
       To our beloved guests,
@@ -23,7 +25,7 @@ function Home() {
     </div>
    </div>
   );
-}
+      }
 
 export default Home;
 
