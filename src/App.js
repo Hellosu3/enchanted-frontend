@@ -13,8 +13,8 @@ import RegistryGifts from "./pages/RegistryGifts";
 import './App.css';
 
 function App() {
-  // const URL = "http://localhost:3000";
-  const URL = "https://enchantedbackend.herokuapp.com"
+  const URL = "http://localhost:4000";
+
 
   return (
     <div className="App">
