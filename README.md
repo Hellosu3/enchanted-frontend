@@ -1,70 +1,48 @@
-# Getting Started with Create React App
+# Project Name
+ 
+ Enchanted
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Live link: 
 
-## Available Scripts
+https://enchantedfrontend.herokuapp.com/
 
-In the project directory, you can run:
+## Backend link and Repo: 
 
-### `npm start`
+https://github.com/Hellosu3/enchanted-backend.git
+https://enchantedbackend.herokuapp.com/
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Project Overview
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Introducing a personally curated wedding app, a testament to our commitment to personalized and engaging experiences. Our guests can access comprehensive details about the bride and groom (Tiago and myself), a countdown until the wedding, the wedding venue, bridal party, and registry/gifts. Our virtual guestbook enables meaningful interactions from our guests and bride and groom. Join us in celebrating our love story through this immersive digital experience.
 
-### `npm test`
+## Technologies used
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+React, Node.jsw, express.js, MongoDB, Tailwind, Heroku
 
-### `npm run build`
+## Models
+Guestbook Entry
+Fields:
+Name - String
+Email - String
+Friend of Bride or Groom or both - String
+Message - String
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## User Stories
+- access comprehensive details about the bride and groom, so that I can learn more about them.
+- view information about the wedding venue, so that I can plan my travel and accommodations accordingly.
+- a separate page for the bridal party, so that I can get to know the members of the wedding party.
+- able to leave a message in the virtual guestbook, so that I can share my well wishes and congratulations with the couple.
+- view the guestbook entries left by others, so that I can see the messages from other guests.
+- an about us page, so that I can learn more about the couple's story and their journey together.
+- access the registry page with Venmo and CashApp badges, so that I can contribute to their wedding gifts.
+-a countdown on the homepage, so that I can know the remaining time until the wedding.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+## Wireframes
+https://i.imgur.com/EbfOQ7q.png
+https://i.imgur.com/Vii2jik.png
+https://i.imgur.com/pDIU3Jt.png
+https://i.imgur.com/SnDT1rt.png
+https://i.imgur.com/yoamHox.png
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
